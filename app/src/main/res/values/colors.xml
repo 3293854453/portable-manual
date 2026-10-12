@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 黑白灰设计系统的 XML 侧镜像（启动窗口背景需要） -->
+    <color name="window_bg_light">#FFFFFFFF</color>
+    <color name="window_bg_dark">#FF0B0B0C</color>
+    <color name="launcher_bg">#FF111113</color>
+</resources>

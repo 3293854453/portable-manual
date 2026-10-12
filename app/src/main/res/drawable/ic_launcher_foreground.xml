@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  图标字形：一页说明书 + 三条文字线，纯黑白灰。
+
+  尺寸说明：自适应图标画布 108×108，但真正可见的区域只有中心 72×72，
+  安全区是直径 66 的圆。字形控制在 27×44（居中于 54,54），
+  四角到中心的距离约 25.8 < 33，留足呼吸感。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 页面外框（右上角折角） -->
+    <path
+        android:pathData="M41,32 L62,32 L68,38 L68,76 L41,76 Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
+
+    <!-- 折角 -->
+    <path
+        android:pathData="M62,32 L62,38 L68,38"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
+
+    <!-- 文字线 -->
+    <path
+        android:pathData="M46,46 L63,46"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M46,55 L63,55"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M46,64 L56,64"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round" />
+</vector>

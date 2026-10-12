@@ -1,0 +1,12 @@
+# 统一换行符：避免在 Windows 检出后 gradlew 变成 CRLF 导致 CI/Linux 执行失败
+* text=auto eol=lf
+*.bat text eol=crlf
+
+# 二进制文件不做换行转换
+*.jar   binary
+*.jks   binary
+*.keystore binary
+*.tflite binary
+*.so    binary
+*.png   binary
+*.jpg   binary

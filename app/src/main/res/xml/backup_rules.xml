@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 图片体积大，不走系统云备份；应用内置 zip 备份/恢复负责迁移。 -->
+    <exclude
+        domain="file"
+        path="images/" />
+</full-backup-content>
