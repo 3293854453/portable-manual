@@ -1,10 +1,33 @@
 # 便携说明书
 
+[![Build](https://github.com/3293854453/portable-manual/actions/workflows/build.yml/badge.svg)](https://github.com/3293854453/portable-manual/actions/workflows/build.yml)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/3293854453/portable-manual)](https://github.com/3293854453/portable-manual/releases/latest)
+
 把纸质说明书拍下来，随时能查。
 
 一个**完全离线**的 Android 应用：纸质说明书拍照归档 → 自动裁边拉正 → 文件夹 + 标签双轨组织 → 关键词搜索 → 导出 PDF / 整库备份。
 
 没有账号，没有云端，没有网络权限。数据只存在你自己的手机上。
+
+---
+
+## 下载安装
+
+**[⬇️ 下载最新版 APK](https://github.com/3293854453/portable-manual/releases/latest)**
+
+| | |
+|---|---|
+| 系统要求 | Android 8.0（API 26）及以上 · `arm64-v8a` |
+| 安装包 | 约 25 MB |
+| 权限 | **仅相机** —— 不申请 `INTERNET`，没有任何上传行为 |
+| 签名 | SHA-256 `a8afa46d…` |
+
+下载后直接安装即可（首次需在系统设置里允许「安装未知来源应用」）。
+想自己编译也行 —— 见 [构建](#构建)。
+
+> **注意**：Release 里的包由维护者用固定密钥签名。如果你改用自己生成的密钥编译，
+> 签名不同，**无法覆盖安装**已发布的版本，需先卸载。
 
 ---
 
