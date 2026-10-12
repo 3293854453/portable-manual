@@ -24,7 +24,6 @@
 | 签名 | SHA-256 `a8afa46d…` |
 
 下载后直接安装即可（首次需在系统设置里允许「安装未知来源应用」）。
-想自己编译也行 —— 见 [构建](#构建)。
 
 > **注意**：Release 里的包由维护者用固定密钥签名。如果你改用自己生成的密钥编译，
 > 签名不同，**无法覆盖安装**已发布的版本，需先卸载。
@@ -134,44 +133,6 @@ Android 8.0 及以上、`arm64-v8a` 架构（这个版本之后的手机基本�
 - 数据全部存在本机私有目录，**卸载即清空**
 
 ---
-
-## 构建
-
-环境要求：JDK 17、Android SDK（`platforms;android-35`、`build-tools;35.0.0`）。
-
-```bash
-git clone https://github.com/3293854453/portable-manual.git
-cd portable-manual
-
-# 指向你的 Android SDK
-echo "sdk.dir=/path/to/android-sdk" > local.properties
-
-./gradlew :app:assembleDebug
-```
-
-产物在 `app/build/outputs/apk/debug/`。
-
-**release 签名**：在项目根目录建 `keystore.properties`（已在 `.gitignore` 中，不会入库）：
-
-```properties
-storeFile=/absolute/path/to/release.jks
-storePassword=******
-keyAlias=portable-manual
-keyPassword=******
-```
-
-然后 `./gradlew :app:assembleRelease`。
-
-> **国内网络**：拉不到 Gradle 发行包时，把 `gradle/wrapper/gradle-wrapper.properties`
-> 里的 `distributionUrl` 换成
-> `https://mirrors.cloud.tencent.com/gradle/gradle-8.11.1-bin.zip`。
-
----
-
-## 更多文档
-
-- [`docs/ALGORITHM.md`](docs/ALGORITHM.md) —— 自动裁边的实现细节与踩过的坑（开发向）
-- [`docs/REQUIREMENTS.md`](docs/REQUIREMENTS.md) —— 需求规格说明书，记录每个设计决策的来由
 
 ## 开源协议
 
